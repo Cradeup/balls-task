@@ -1,0 +1,38 @@
+#window-par{
+    height: 600px;
+    width: 900px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.ball{
+    height: 70px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 900px;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    display: inline-block;
+}
+
+@keyframes ball{
+    0%{
+        
+    }
+    100% {
+        transform: translate(0, -1200px);
+    }
+
+}
+
+#needle{
+    position: relative;
+    height: 60px;
+    width: 4px;
+    background-color: black;
+}
